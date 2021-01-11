@@ -1,7 +1,7 @@
 import isString from 'lodash.isstring'
 export const state = () => ({
   pageType: '',
-  title: '',
+  title: 'AGCMp3',
   subtitle: '',
   featureImage: '',
   content: '',

@@ -12,9 +12,10 @@ if (process.env.URL && process.argv[2] === 'generate') {
 export const modules = [
   // Doc: https://axios.nuxtjs.org/usage
   '@nuxtjs/axios',
-  '@nuxtjs/eslint-module',
+  // '@nuxtjs/eslint-module',
   '@nuxtjs/style-resources',
   'nuxt-fontawesome',
+  ['nuxt-buefy', { ssr:true, css: true, materialDesignIcons: false }],
   'nuxt-responsive-loader'
 ]
 if (siteConfig.googleAnalytics.on && siteConfig.googleAnalytics.id) {
